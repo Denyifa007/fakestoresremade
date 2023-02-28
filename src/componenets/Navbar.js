@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Marque from "./Marque";
+import Hamburger from 'hamburger-react'
 
 const Navbar = ({ cartItem }) => {
   console.log(cartItem);
+  
   return (
     <div>
       <div className="soft">
@@ -27,7 +29,7 @@ const Navbar = ({ cartItem }) => {
             <li>
               <Link to="Cart">🛒Cart ({cartItem.length})</Link>
             </li>
-            <button>LOG IN</button>
+            <button id="log">LOG IN</button>
 
             <li>
               <Link to="Products">Sign Up</Link>
